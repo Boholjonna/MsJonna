@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+    
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>MsBohol</title>
+   <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Alojah:wght@400;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+       
+
+
+</head>
+
+<body>
+<style> 
+     
+  
+
+     body{
+   background-color: rgb(44, 23, 21); 
+    background-repeat: no-repeat;
+    
+    
+  
+ 
+   
+   
+  
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bg.jfif'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    opacity: 0.3; /* Set the desired opacity */
+    z-index: -5; /* Places it behind other content */
+}
+
+
+
+
+     .click:hover {
+        color:rgb(39, 19, 15);
+        background-color: rgb(233, 198, 194);
+
+
+      
+     }
+
+
+
+
+
+     .panel{
+
+background: rgb(43, 14, 10);
+border-radius: 30px;
+height: 520px;
+width: 600px;
+margin-left: 620px;
+margin-right: 20px;
+margin-bottom: 10px;
+margin-top: 90px ;
+opacity: 0.7;
+flex-direction: column; /* Stack children vertically */
+justify-content: space-between; /* Space between elements inside the panel */
+
+}
+
+
+
+
+.click {
+        
+   color: rgb(255, 255, 255); /* Text color */
+    background-color: rgb(179, 119, 106); /* Fully opaque background color */
+    font-weight: bold;
+    border: none;
+    border-radius: 26px;
+    margin-left: 0px;
+    margin-top: 0px;
+    opacity: 1; /* Fully opaque button */
+    width: 600px;
+    height: 70px;
+    font-size: 250%;
+    font-family: 'Amaranth';
+         
+     }
+
+     .label{
+       color: rgb(255, 255, 255);
+       margin-left: 50px;
+       margin-right: 45px;
+       margin-top: 20px;
+       font-family: 'Amaranth';
+       font-style:normal;
+       font-weight: 100;
+       text-align: justify; 
+       text-indent: 50px;
+       
+       
+     }
+
+
+   
+     .welcome{
+      font-family: 'Alojah';
+      color: rgb(255, 255, 255);
+      font-display: center;
+      align-items: center; 
+      padding-top: 15px;
+      margin-bottom: 30px;
+      font-size: 300%;
+      text-align: center;
+      
+     }
+
+     .welcome {
+         color: rgb(255, 255, 255);
+         margin-left: 0 px;
+         opacity: 1;
+         
+     }
+
+     
+     .profile-img {
+      float: left;
+    width: 170px; /* Adjust size as needed */
+    height: 170px; /* Adjust size as needed */
+    border-radius: 50%;  /*make the pic circular */
+    background-size: cover; /* Ensures the background image covers the circle */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    border: 2px solid #fad1d1; /* Optional: adds a border around the circle */
+      margin-left: 200px;
+      margin-top: 20 px;
+      
+
+
+}
+
+     
+
+
+    
+.fa-linkedin {
+   position: absolute;
+   top: 320px; 
+   left: 80px;
+   font-size: 50px; /* Size of the icon */
+    color: rgb(33, 151, 189); /* Icon color */
+    background-color: rgb(255, 255, 255); /* Background color */
+    display: inline-flex; /* Use inline-flex for precise control */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    border-radius: 50%; /* Make the background circular */
+    width: 1em; /* Width fits the icon exactly */
+    height: 1em; /* Height fits the icon exactly */
+    padding: 10px; /* Adjust padding to ensure the background fits snugly */
+    box-sizing: content-box; /* Ensure padding does not affect the background size */
+    margin-top: 500 px;
+    float: left;
+    
+
+    
+    
+    
+  
+}
+
+.fa-github{
+
+   color:rgb(235, 16, 239);
+   position: absolute;
+   top: 500px; 
+   left: 80px;
+   font-size: 50px; /* Size of the icon */
+    background-color: rgb(241, 202, 240); /* Background color */
+    display: inline-flex; /* Use inline-flex for precise control */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    border-radius: 50%; /* Make the background circular */
+    width: 1em; /* Width fits the icon exactly */
+    height: 1em; /* Height fits the icon exactly */
+    box-sizing: content-box; /* Ensure padding does not affect the background size */
+    box-sizing: content-box; /* Ensure padding does not affect the background size */
+    padding:10px;
+    
+}
+
+.fa-envelope{
+   color:rgb(249, 245, 245);
+   position: absolute;
+   top: 410px; 
+   left: 80px;
+   font-size: 50px; /* Size of the icon */
+    background-color: rgb(251, 147, 135); /* Background color */
+    display: inline-flex; /* Use inline-flex for precise control */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    border-radius: 50%; /* Make the background circular */
+    width: 1em; /* Width fits the icon exactly */
+    height: 1em; /* Height fits the icon exactly */
+    box-sizing: content-box; /* Ensure padding does not affect the background size */
+    box-sizing: content-box; /* Ensure padding does not affect the background size */
+    padding:10px;
+
+
+}
+
+
+.linkedIn{
+   position:absolute;
+   top: 335px;
+   left:170px;
+   flex-direction: row;
+   color: white;
+   font-size: 25px;
+   font-family:Arial;
+   background-color: transparent; /* Makes the background invisible */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to a pointer */
+ 
+}
+
+
+.mail{
+   position:absolute;
+   left:170px;
+   top: 425px;
+   flex-direction: row;
+   color: white;
+   font-size: 25px;
+   font-family:Arial;
+   background-color: transparent; /* Makes the background invisible */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to a pointer */
+ 
+}
+
+.git{
+   position:absolute;
+   left:170px;
+   top: 515px;
+   flex-direction: row;
+   color: white;
+   font-size: 25px;
+   font-family:Arial;
+   background-color: transparent; /* Makes the background invisible */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to a pointer */
+ 
+}
+
+</style>
+
+
+
+
+<div class="profile-img" style="background-image: url('me.jpg');">   
+
+   
+
+     
+      
+      
+  
+
+</div>
+
+
+
+<div class="panel">
+   
+   <h1 class="welcome"> Welcome!
+      <hr class="hr">  
+   </h1>
+   <h1 class="label"> Hello! My name is Jonna Bohol. I am currently taking up Computer Engineering Degree. I am always passionate about learning and harnessing technical knowledge and skills especially in web development and operations. I have expertise on creating websites and as well as updating them. 
+   </h1>
+      
+  
+
+<button class ="click"> About Me </button>
+ 
+
+</div>
+
+
+<i class="fa-brands fa-linkedin"></i> 
+<i class="fa-brands fa-github"></i>
+<i class="fa-regular fa-envelope"></i>
+
+<a href="https://www.linkedin.com/in/jonna-bohol-8a015529a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&fbclid=IwY2xjawFXO8JleHRuA2FlbQIxMAABHadXB51LTm95J7O95P21jeJglb2u-55RsMnJK0pEZpVHIv3COd54VdHsqQ_aem_HKegu-ievU6Kn6VYtAcnWg" target="_blank" rel="noopener noreferrer">
+   <button class="linkedIn"><u>Jonna Bohol</u></button>
+</a>
+
+
+<a href="mailto:boholjonna919@gmail.com">
+   <button class="mail"><u>boholjonna919@gmail.com</u></button>
+</a>
+
+     
+      <a href="https://github.com/Boholjonna/Boholjonna" target="_blank" rel="noopener noreferrer">
+    <button class="git"><u>Boholjonna</u></button>
+</a>
+
+       
+
+
+
+
+</body>
+</html>
