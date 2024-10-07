@@ -118,26 +118,42 @@ justify-content: space-between; /* Space between elements inside the panel */
      }
 
 
-   
-     .welcome{
-      font-family: 'Alojah';
-      color: rgb(255, 255, 255);
-      font-display: center;
-      align-items: center; 
-      padding-top: 15px;
-      margin-bottom: 30px;
-      font-size: 300%;
-      text-align: center;
-      
-     }
-
      .welcome {
-         color: rgb(255, 255, 255);
-         margin-left: 0 px;
-         opacity: 1;
-         
-     }
+  font-family: 'Alojah';
+  font-display: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  margin-bottom: 30px;
+  font-size: 300%;
+  text-align: center;
+  color: transparent; /* Start with transparent text */
+  -webkit-text-stroke: 2px rgb(225, 196, 190); /* Stroke color */
+  background: none; /* Initially no background */
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  animation: strokeToSolid 4s infinite ease-in-out;
+}
 
+@keyframes strokeToSolid {
+  0% {
+    color: transparent; /* Text is transparent */
+    -webkit-text-stroke: 2px rgb(225, 196, 190); /* Stroke visible */
+    background: none; /* No background color */
+  }
+  50% {
+    color: white; /* Solid white text */
+    -webkit-text-stroke: 2px rgb(225, 196, 190); /* Stroke stays */
+    background: none; /* No background color */
+  }
+  100% {
+    color: transparent; /* Text fades out to transparent */
+    -webkit-text-stroke: 2px rgb(225, 196, 190); /* Stroke remains visible */
+    background: none;
+  }
+}
+
+
+  
      
      .profile-img {
       float: left;
@@ -304,7 +320,7 @@ justify-content: space-between; /* Space between elements inside the panel */
 
 <div class="panel">
    
-   <h1 class="welcome"> Welcome!
+   <h1 class="welcome"> W E L C O M E !
       <hr class="hr">  
    </h1>
    <h1 class="label"> Hello! My name is Jonna Bohol. I am currently taking up Computer Engineering Degree. I am always passionate about learning and harnessing technical knowledge and skills especially in web development and operations. I have expertise on creating websites and as well as updating them. 
