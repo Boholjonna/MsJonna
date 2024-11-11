@@ -19,6 +19,8 @@
         color: black;
         flex-wrap: nowrap; 
         flex-direction: row;
+        width:100vw;
+        height:100vh;
         
        
 
@@ -43,32 +45,46 @@
     }
 
     
-    
-/* Mobile styles */
-@media (max-width: 768px) { /* Target mobile devices */
-    .container {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow-y: hidden; /* Prevent vertical scrolling on the container */
-    }
+/* General styles for larger screens */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 
-    /* Set each panel to absolute position, covering the viewport */
+/* Default for panels */
+.p0, .p1, .p2, .p3, .p4 {
+    position: fixed; /* Use fixed to keep them in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    display: none; /* Hide all panels by default */
+}
+
+/* Show only p0 initially */
+.p0 {
+    display: block;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    /* Ensure all panels occupy the entire screen */
     .p0, .p1, .p2, .p3, .p4 {
-        position: absolute;
+        position: absolute; /* Use absolute position to stack them */
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
-        display: none; /* Hide all panels by default */
+        width: 100%;
+        height: 100%;
+        display: none; /* Hide panels by default on mobile */
     }
 
-    /* Initially show only Panel 0 */
+    /* Show only p0 initially on mobile */
     .p0 {
         display: block;
     }
 }
-
 
 
     .p0{
