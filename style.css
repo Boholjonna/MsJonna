@@ -47,17 +47,28 @@
 /* Mobile styles */
 @media (max-width: 768px) { /* Target mobile devices */
     .container {
-        flex-direction: column; /* Stack divs vertically on mobile */
-        overflow-y: auto; /* Enable vertical scrolling */
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: hidden; /* Prevent vertical scrolling on the container */
     }
 
-    /* Set each panel's position to relative and full width */
-    .p0,.p1, .p2, .p3, .p4 {
-        position: relative; /* Change to relative on mobile */
-        width: 100%; /* Full width for each div */
-        
+    /* Set each panel to absolute position, covering the viewport */
+    .p0, .p1, .p2, .p3, .p4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: none; /* Hide all panels by default */
+    }
+
+    /* Initially show only Panel 0 */
+    .p0 {
+        display: block;
     }
 }
+
 
 
     .p0{
