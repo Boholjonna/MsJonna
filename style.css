@@ -52,7 +52,7 @@
     }
 
     /* Set each panel's position to relative and full width */
-    .p1, .p2, .p3, .p4 {
+    .p0,.p1, .p2, .p3, .p4 {
         position: relative; /* Change to relative on mobile */
         width: 100%; /* Full width for each div */
         
