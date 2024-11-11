@@ -9,11 +9,13 @@ function showPanel(panelId) {
   const panels = document.querySelectorAll('.p0, .p1, .p2, .p3, .p4');
   panels.forEach(function(element) {
       element.style.display = 'none'; // Hide all panels by default
+      element.style.zIndex = '1'; // Reset z-index for all panels
   });
 
   // Display the selected panel
   const showElement = document.querySelector(`.${panelId}`);
   showElement.style.display = 'block';
+  showElement.style.zIndex = '10'; // Bring the selected panel to the front
 
   // Store the active panel ID in localStorage
   localStorage.setItem('activePanel', panelId);
