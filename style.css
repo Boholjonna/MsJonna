@@ -1,0 +1,663 @@
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+    
+    
+    
+    .body{
+
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        display: flex;
+        color: black;
+        flex-wrap: wrap; 
+        
+       
+
+    }
+    
+
+
+    
+    .container {
+
+        background-color: black;
+        width:130cap;
+        position: absolute;
+         top:0vh;
+         left: 0vh;
+         display: flex;
+         flex-wrap: wrap; 
+        
+        
+    }
+
+
+    .p0{
+
+        display: flex;
+        flex-wrap: wrap; 
+    height: 100vh;
+     width:45vw;
+    position: fixed;
+    top: 0vh;
+    left:0vw;
+    background-image: url('bg2.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+   
+        
+        
+}
+
+    .p1{
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap; 
+        background-color:transparent;
+        height: 100vh;
+        width:60vw;
+        left:40vw;
+        z-index:4;
+        background-image: url('ds1.png');
+        overflow-x: hidden;
+        flex-direction: column; 
+        overflow-y: auto;
+        
+        
+    }
+
+    .p2{
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap; 
+        background-color: rgb(1, 8, 34);
+        background-image: url('ds2.png');
+        height: 100vh;
+        width:60vw;
+        left:40vw;
+        z-index:3;
+        flex-direction: column;  /* Allow stacking of h1 elements vertically */
+        overflow-y: auto;
+        overflow-x: hidden;
+        
+        
+        
+    
+}
+
+
+.p3{
+    position: fixed;
+     display: flex;
+    flex-wrap: wrap; 
+    background-color: rgb(25, 0, 50);
+    background-image: url('ds3.png');
+    height: 100vh;
+    width:60vw;
+    left:40vw;
+    z-index:2;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+        
+}
+
+.p4{
+    position: fixed;
+     display: flex;
+    flex-wrap: wrap; 
+    background-color: rgb(2, 23, 33);
+    background-image: url('ds4.png');
+    height: 100vh;
+        left:40vw;
+        width:60vw;
+        z-index:1;   /* this is the positioning order */
+        overflow-y: auto;
+        overflow-x: hidden;
+        
+        
+}
+
+.styled-line {
+    position: absolute;
+    left: 10cap;
+    border: 0;
+    height: 2px;
+    width:55cap;
+    background-color: #00c5e4; /* Color of the line */
+    top:15cap;
+}
+
+
+#welcome{
+    color: rgb(119, 182, 255);
+    letter-spacing: 10px;
+    position:absolute;
+    top: 30px;
+    left: 3cap;
+    font-size: 60px;
+    animation: rotateText 5s linear ;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* rotating the letters */
+
+.letter {
+    display: inline-block;
+    animation: flip 4s linear; /* Slower animation, runs once */
+    animation: colorChange 6s infinite, flip 6s linear; 
+    transform-origin: center;
+}
+
+/* Keyframes for flipping each letter */
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* changing the color to white */
+
+@keyframes colorChange {
+    0% {
+        color: rgb(0, 58, 250);
+    }
+    50% {
+        color: rgb(119, 182, 255); /* Blue color */
+    }
+    100% {
+        color: rgb(0, 58, 250);
+    }
+}
+
+.profile{
+
+            width: 150px; /* Set the desired width */
+            height: 150px; /* Set the desired height */
+            border-radius: 50%; /* Makes the image a circle */
+            object-fit: cover; /* Ensures the image scales correctly within the circle */
+            position: absolute;
+            left: 200px;
+            top:120px;
+            border: 5px solid rgb(0, 58, 250);
+}
+
+
+.gmail{
+
+    position:absolute;
+    top:29cap;
+    left:8cap;
+    height: 5cap;
+    width: 5cap;
+    background-color: rgb(230, 239, 253);
+    border-radius: 50%;
+}
+
+.github{
+
+    position:absolute;
+    top:36cap;
+    left:8cap;
+    height: 5cap;
+    width: 5cap;
+    background-color: rgb(88, 0, 101);
+    border-radius: 50%;
+    
+}
+
+
+.linkedIn{
+
+    position:absolute;
+    top:42cap;
+    left:7cap;
+    height: 7cap;
+    width: 7cap;
+    border-radius: 50%;
+    
+}
+
+
+
+.nc{
+
+    position:absolute;
+    height: 5cap;
+    width: 5cap;
+    border-radius: 50%;
+    border:3px solid rgb(249, 250, 251);
+    top:51cap;
+    left:8cap;
+    cursor:pointer;
+    
+}
+
+.mail{
+    position:absolute;
+   background-color: transparent;
+   border:none;
+   color: white;
+   font-size: 15px;
+   top:30cap;
+   left:15cap;
+   cursor:pointer;
+   
+
+}
+
+
+.git{
+    position:absolute;
+   background-color: transparent;
+   border:none;
+   color: white;
+   font-size: 15px;
+   cursor:pointer;
+   top:37cap;
+   left:15cap;
+  
+
+}
+
+.li{
+    position:absolute;
+    background-color: transparent;
+    border:none;
+    color: white;
+    font-size: 15px;
+    cursor:pointer;
+    top:44cap;
+    left:15cap;
+   
+
+
+}
+
+.ncb{
+    position:absolute;
+    background-color: transparent;
+    border:none;
+    color: white;
+    font-size: 15px;
+    cursor:pointer;
+    top:52cap;
+    left:15cap;
+
+}
+
+
+.label{
+    position: absolute;
+    color:white;
+    font-family:Amaranth;
+    font-weight: normal; /* Ensures font is not bold */
+    letter-spacing: 3px; /* Adjusts the spacing between letters */
+    left:10cap;
+    text-align: justify; 
+    margin-top: 17cap;
+    display: block; /* Make <br> behave like a block element to apply margins */
+    
+
+}
+
+.mail:hover{
+
+    color:aqua;
+}
+
+.li:hover{
+
+    color:aqua;
+}
+
+.git:hover{
+
+    color:aqua;
+}
+
+.ncb:hover{
+
+    color:aqua;
+}
+
+#b1{
+    position:absolute;
+    left:7cap;
+    background-color: transparent;
+    border:none;
+    color: rgb(232, 236, 239);
+    font-family: 'Play', sans-serif; 
+    font-size: 20px;
+    margin-top: 2cap;
+   
+    
+}
+
+#b2{
+    position:absolute;
+    left:19cap;
+    background-color: transparent;
+    border:none;
+    color: rgb(232, 236, 239);
+    font-family: 'Play', sans-serif; 
+    font-size: 20px;
+    margin-top: 2cap;
+   
+   
+}
+
+#b3{
+    position:absolute;
+    left:29cap;
+    background-color: transparent;
+    border:none;
+    color: rgb(232, 236, 239);
+    font-family: 'Play', sans-serif; 
+    font-size: 20px;
+    margin-top: 2cap;  
+    
+}
+
+#b1:hover{
+    color:rgb(0, 242, 255);
+    cursor:pointer;
+
+}
+
+#b2:hover{
+    color:rgb(0, 242, 255);
+    cursor:pointer;
+
+}
+
+#b3:hover{
+    color:rgb(0, 242, 255);
+    cursor:pointer;
+
+}
+
+.fa-house{
+
+    position:absolute;
+    color: white;
+    font-size:30px;
+    top:1cap;
+    left:1cap;
+}
+
+
+.fa-house:hover{
+    color: rgb(0, 104, 249);
+    
+}
+
+#educ{
+        font-family:Bebas Neue;
+        font-size: 30px;
+        color: aqua;
+        position: relative;
+        margin-top: 20px;
+        left: 310px;
+        letter-spacing: 15px;
+        
+}
+
+#edlevel1{
+    color:white;
+    font-family:  Helvetica;
+    font-size: 19px;
+    position:relative;
+    margin-top:50px;
+    margin-left:60px;
+    font-weight: normal;
+
+
+
+
+}
+#edlevel2{
+    color:white;
+    font-family:  Helvetica;
+    font-size: 19px;
+    position:relative;
+    margin-left:60px;
+    margin-top:20px;
+    font-weight: normal;
+   
+
+
+
+}
+#edlevel3{
+    color:white;
+    font-family:  Helvetica;
+    font-size: 19px;
+    position:relative;
+    margin-left:60px;
+    margin-top:20px;
+    font-weight: normal;
+   
+}
+
+#edlevel4{
+    color:white;
+    font-family:  Helvetica;
+    font-size: 19px;
+    position:relative;
+    margin-left:60px;
+    margin-top:20px;
+    font-weight: normal;
+   
+}
+
+#ed1{
+        
+        font-size: 15px;
+        color:white;
+        font-family:  Helvetica;
+        position: relative;
+        font-weight: normal;
+        left:15cap;
+        overflow-y: auto;
+}
+#ed2{
+    
+    font-size: 15px;
+    color:white;
+    font-family:  Helvetica;
+    position: relative;
+    font-weight: normal;
+    left:15cap;
+    overflow-y: auto;
+
+}
+
+#ed3{
+   
+    font-size: 15px;
+    color:white;
+    font-family:  Helvetica;
+    position: relative;
+    font-weight: normal;
+    left:15cap;
+   
+}
+
+#ed4{
+   
+    font-size: 15px;
+    color:white;
+    font-family:  Helvetica;
+    font-weight: normal;
+    position: relative;
+    left:15cap;
+    
+
+}
+
+#java{
+    font-family:Changa;
+    font-size: 20px;
+    color: rgb(0, 170, 255);
+    position: relative;
+    margin-top: 20px;
+    left: 4vw;
+    letter-spacing: 10px;
+    
+
+}
+
+
+.style1-line{
+    position:absolute;
+    background-color: #5500ff;
+    width:23vw;
+    left:3vw;
+   
+
+}
+
+
+#lms1{
+
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position:relative;
+    left:3vw;
+    margin:20px;
+    
+    
+}
+
+
+#lms2{
+
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight:normal;
+    position:relative;
+    left:7vw;
+    margin:10px;
+    
+}
+
+
+#lms3{
+
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight:normal;
+    position:relative;
+    left:9vw;
+    margin:10px;
+    
+    
+}
+
+#lm1{
+    height: 54vh;
+    width: 50vw;
+   position: relative;
+   margin:5cap;
+   left:2cap;
+
+
+}
+
+
+#lm2{
+    height: 54vh;
+    width: 50vw;
+    position: relative;
+    margin:5cap;
+    left:2cap;
+
+ 
+    
+}
+
+
+
+#lm3{
+    height: 54vh;
+    width: 50vw;
+    position: relative;
+    margin:5cap;
+    left:2cap;
+
+
+    
+}
+
+#lm4{
+    height: 54vh;
+    width: 50vw;
+    position: relative;
+    margin:5cap;
+    left:2cap;
+
+
+    
+}
+
+
+#lm5{
+    height: 54vh;
+    width: 50vw;
+    position: relative;
+    margin:5cap;
+    left:2cap;
+
+
+    
+}
+
+
+#lm6{
+    height: 54vh;
+    width: 50vw;
+    position: relative;
+    margin:5cap;
+    left:2cap;
+
+
+    
+}
+
+#lm7{
+    height: 54vh;
+    width: 50vw;
+    position: relative;
+    margin:5cap;
+    left:2cap;
+
+
+    
+}
+
+
+
+
