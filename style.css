@@ -42,18 +42,20 @@
         
     }
 
-
+    
+    
 /* Mobile styles */
-@media (max-width: 768px) { /* Adjust the width as needed */
+@media (max-width: 768px) { /* Target mobile devices */
     .container {
         flex-direction: column; /* Stack divs vertically on mobile */
         overflow-y: auto; /* Enable vertical scrolling */
-        height: 100vh; /* Ensure it takes up the full viewport height */
     }
 
-    .container > div {
+    /* Set each panel's position to relative and full width */
+    .p1, .p2, .p3, .p4 {
+        position: relative; /* Change to relative on mobile */
         width: 100%; /* Full width for each div */
-        height: auto; /* Allow height to adjust based on content */
+        
     }
 }
 
