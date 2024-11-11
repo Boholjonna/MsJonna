@@ -34,7 +34,7 @@
         background-color: black;
         width:100vw;
         height:100vh;
-        position: absolute;
+        position: relative;
          top:0vh;
          left: 0vh;
          display: flex;
