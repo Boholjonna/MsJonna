@@ -1,0 +1,268 @@
+
+
+
+
+
+
+@media (orientation:landscape){
+
+        
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0; /* Removes default body margins */
+    padding: 0; /* Removes default body padding */
+    height: 100vh;  /* Ensures the body takes full height */
+    overflow-y: auto;  /* Enables vertical scrolling */
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+.p1{
+    top: 0;
+    background-color: transparent;
+    height: 18vh; /* Full height of the body */
+    width: 100vw; /* Full width of the body */
+    position: fixed;
+    display: flex;
+    gap:10vw; /* space between buttons*/
+    justify-content: center; 
+    object-fit: contain; 
+    padding-right: 10vw;
+   
+    
+    
+    
+}
+
+
+
+.me {
+
+    width: 15vw;
+    height: 19vh;
+    left:4vw;
+    position: fixed;
+    top:0;
+    
+}
+
+
+.d1 {
+
+    width: 10vw;
+    height: 11vh;
+    margin-left:90vw;
+    top:0;
+    z-index: 0;
+    
+}
+
+
+
+button{
+    border:none;
+    font-size: large;
+    background-color: transparent;
+    padding: 0%;
+    margin-bottom:7vh;
+    font-weight: bold;
+    color:rgb(194, 0, 247)
+   
+    
+}
+
+#b2{
+    color:aqua;
+    
+}
+
+#b1{
+    margin-left:20vh;
+    
+}
+
+
+
+
+.line {
+    left: 5vw;
+    width: 80vw;
+    height: 2px;
+    background-color: rgb(7, 210, 255);  /* Solid violet color */
+    border: none;  /* Remove default border */
+    position: fixed;
+    margin-left: 13%;
+    box-shadow: 0px 0px 10px rgba(123, 7, 255, 0.5);  /* blur the line a bit */
+    top:10vh;
+   
+
+    
+}
+
+.label{
+
+    margin-top: 10vh;
+    color: rgb(246, 0, 209);
+    font-size: x-large;
+          margin-top:20vh;
+}
+
+
+
+.main{
+    float: center;
+    height: 70vh;
+    top:21vh;
+    width: 80vw;
+    background-color: rgb(28, 0, 28);
+    position:fixed;
+    left:10vw;
+    right:14vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 30px;
+    
+}
+
+
+   
+#c{
+    position: absolute;
+    font-size: auto;
+    color: rgb(72, 38, 96);
+    margin-left: 1vw;
+    font-family: 'Play', sans-serif;
+    margin-top:97vh;
+}
+
+
+
+
+#java{
+    font-family: Changa;
+    font-size: clamp(1rem, 3vw + 1rem, 2rem); /* Responsive font size */
+    color: rgb(230, 0, 255);
+    position: relative;
+    letter-spacing: 10px;
+    margin-top: 20px;
+    text-align: center; /* Centers the text horizontally */
+    width: 100%; /* Ensures the element takes the full width */
+    left: 50%; /* Moves the element horizontally to the center */
+    transform: translateX(-50%); /* Offsets by 50% of the element's width to center it */
+    
+
+}
+
+
+#lms1{
+
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position:relative;
+    left:3vw;
+    margin:20px;
+    
+    
+}
+
+
+#lms2{
+
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight:normal;
+    position:relative;
+    left:7vw;
+    margin:10px;
+    
+}
+
+#lms3{
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 2vw + 1rem, 18px); /* Responsive font size */
+    font-weight: normal;
+    position: relative;
+    left: 0; /* Aligns the element to the left */
+    margin: 10px;
+    text-align: left; /* Left-aligns the text inside the element */
+    left:10px;
+    
+    
+}
+
+#lms4{
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 2vw + 1rem, 18px); /* Responsive font size */
+    font-weight: normal;
+    position: relative;
+    left: 0; /* Aligns the element to the left */
+    margin: 10px;
+    text-align: left; /* Left-aligns the text inside the element */
+    left:10px;
+    
+    
+}
+
+
+
+ul.lms3, ol.lms3 {
+    padding-left: 40px; /* Indent the whole list including bullets or numbers */
+}
+
+#lm1{
+    height: 55vh;
+    width:60vw;
+    margin-left:10vw;
+    margin-top: 10vh;
+}
+
+
+ 
+
+
+/* Scrollbar container */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgb(34, 0, 93), rgb(56, 0, 77)); /* Gradient background for the track */
+    border-radius: 6px; /* Rounded edges for the track */
+}
+
+/* Scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, rgb(153, 0, 247), rgb(146, 4, 255)); /* Gradient for the thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+    border: 1px solid rgb(189, 180, 180); /* Adds padding and matches track color */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, rgb(140, 80, 255), rgb(243, 7, 255)); /* Change gradient on hover */
+}
+
+
+
+
+
+}
+
+
+@media (orientation:portrait){
+   
+
+}

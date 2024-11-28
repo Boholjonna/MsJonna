@@ -1,0 +1,118 @@
+
+
+
+
+
+
+@media (orientation:landscape){
+
+        
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0; /* Removes default body margins */
+    padding: 0; /* Removes default body padding */
+    height: 100vh;  /* Ensures the body takes full height */
+    overflow-y: auto;  /* Enables vertical scrolling */
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+.p1{
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    height: 18vh; /* Full height of the body */
+    width: 100vw; /* Full width of the body */
+    position: fixed;
+    display: flex;
+    gap:10vw; /* space between buttons*/
+    justify-content: center; 
+    object-fit: contain; 
+    padding-right: 10vw;
+    
+    
+    
+}
+
+
+
+.me {
+
+    width: 15vw;
+    height: 19vh;
+    left:4vw;
+    position: fixed;
+    top:0;
+    
+}
+
+
+button{
+    border:none;
+    font-size: large;
+    background-color: transparent;
+    padding: 0%;
+    margin-bottom:7vh;
+    font-weight: bold;
+    color:rgb(194, 0, 247)
+    
+}
+
+#b4{
+    color:aqua;
+    
+}
+
+#b1{
+    margin-left:20vh;
+    
+}
+
+
+
+
+.line {
+    left: 5vw;
+    width: 80vw;
+    height: 2px;
+    background-color: rgb(7, 210, 255);  /* Solid violet color */
+    border: none;  /* Remove default border */
+    position: fixed;
+    margin-left: 13%;
+    box-shadow: 0px 0px 10px rgba(123, 7, 255, 0.5);  /* blur the line a bit */
+    top:10vh;
+   
+
+    
+}
+
+
+
+
+
+.main{
+    
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+
+
+  
+.label{
+
+    margin-top: 10vh;
+    color: rgb(246, 160, 0);
+    font-size: x-large;
+          margin-top:20vh;
+}
+   
+}
+
+
+@media (orientation:portrait){
+
+}

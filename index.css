@@ -1,0 +1,280 @@
+body {
+    background-color: black;
+    margin: 0; /* Removes default body margins */
+    padding: 0; /* Removes default body padding */
+    height: 100vh; /* Ensures the body spans the entire viewport */
+   
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    height: 92vh; /* Full height of the body */
+    width: 100vw; /* Full width of the body */
+    display: flex;
+    box-sizing: border-box;
+}
+
+
+.p1{
+    height:75vh;
+    width: 35vw;
+    margin-left: 3vw;
+    margin-top: 6vh;
+    border-radius: 30px;
+       
+    
+
+
+}
+
+.p2{
+    height:75vh;
+    width: 55vw;
+    border:3px solid rgb(121, 8, 208);
+    margin-left: 3vw;
+    margin-top: 6vh;
+    border-radius: 30px;
+       
+   
+
+}
+
+/* the second panel adjusts if the width gets smaller */
+
+@media (orientation: portrait) {
+
+
+    .container {
+        background-color: rgb(0, 0, 0);
+        height: 92vh; /* Full height of the body */
+        width: 100vw; /* Full width of the body */
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    .p1{
+        height:40vh;
+        width: 50vw;
+        border-radius: 30px;
+        margin-left: 25vw;
+        margin-top: 0vh;
+        object-fit: contain;
+       
+       
+        
+        
+    
+    
+    }
+    
+    .p2{
+        height:40vh;
+        width: 90vw;
+        border:3px solid rgb(121, 8, 208);
+        border-radius: 30px;
+        margin-bottom: 2vh;
+        margin-left: 4vw;
+        position: relative;
+       
+    
+    }
+
+    
+.aboutme{
+    background-color: rgb(191, 2, 243);
+    letter-spacing: 3px;
+    border-radius: 15px;
+    font-size: clamp(0.28rem, 1.01vw + 0.28rem, 0.7rem); 
+    width: 40%;
+    color:white;
+    position: relative;
+    margin-left: 70%;
+    
+}
+
+
+footer{
+    position: relative;
+    height: 8vh;
+    width:100vw;
+    background-color: rgb(49, 0, 105);
+    margin-top: 92vh;
+    margin-bottom: 0; /* Removes default body margins */
+    padding: 0; 
+}
+
+
+
+.label{
+    position: relative;
+    color: white;
+    font-family: Amaranth;
+    font-weight: normal; /* Ensures font is not bold */
+    letter-spacing: 3px; /* Adjusts the spacing between letters */
+    left: 50%; /* Centers the element horizontally */
+    transform: translateX(-50%); /* Moves element back by half its width */
+    text-align: center; /* Centers text within the element */
+    margin-top: 4vh; /* Adjusts vertical positioning */
+    font-size: clamp(0.28rem, 1.05vw + 0.28rem, 0.7rem); 
+    width: 80%; /* Set a responsive width */
+    text-indent: 5vw; /* Indentation based on the container's width */
+
+
+}
+
+
+.me{
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* this ensures that the content in the div, is only inside it */
+    
+}
+
+#c{
+    font-size: 70%;
+    color: rgb(231, 202, 252);
+    margin-left: 1vw;
+    font-family: 'Play', sans-serif;
+   
+}
+
+.aboutme:active {
+    background-color: rgb(178, 0, 254);
+}
+
+
+
+}
+
+
+
+footer{
+    position: absolute;
+    height: 10vh;
+    width:100vw;
+    background-color: rgb(49, 0, 105);
+    margin-top: 92vh;
+    margin-bottom: 0; /* Removes default body margins */
+    padding: 0; 
+}
+
+
+
+#c{
+    font-size: auto;
+    color: rgb(231, 202, 252);
+    margin-left: 1vw;
+    font-family: 'Play', sans-serif;
+}
+
+.me{
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* this ensures that the content in the div, is only inside it */
+    
+}
+
+
+#greetings{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically within its own element */
+    color: rgb(178, 4, 241);
+    letter-spacing: 1vw;
+    position: relative;
+    left: 50%; /* Moves the left edge to the center of the page */
+    transform: translateX(-50%); /* Centers element by moving it back half its width */
+    margin-top:0 vh; /* Positions it vertically */
+    text-align: center;
+    font-size: clamp(0.56rem, 1.0vw + 0.56rem, 1.4rem);
+    animation: rotateText 5s linear;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+    font-family: 'Pacifico', cursive;
+}
+
+
+
+/* rotating the letters */
+
+.letter {
+    display: inline-block;
+    animation: flip 4s linear; /* Slower animation, runs once */
+    animation: colorChange 6s infinite, flip 6s linear; 
+    transform-origin: center;
+}
+
+/* Keyframes for flipping each letter */
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* changing the color to white */
+
+@keyframes colorChange {
+    0% {
+        color: rgb(175, 0, 250);
+    }
+    50% {
+        color: rgb(209, 2, 241); /* Blue color */
+    }
+    100% {
+        color: rgb(166, 0, 255);
+    }
+}
+
+.label{
+    position: relative;
+    color: white;
+    font-family: Amaranth;
+    font-weight: normal; /* Ensures font is not bold */
+    letter-spacing: 3px; /* Adjusts the spacing between letters */
+    left: 50%; /* Centers the element horizontally */
+    transform: translateX(-50%); /* Moves element back by half its width */
+    text-align: justify; /* Centers text within the element */
+    margin-top: 4vh; /* Adjusts vertical positioning, can use vh for better responsiveness */
+    font-size: clamp(0.28rem, 1.05vw + 0.28rem, 0.9rem); 
+
+    width: 80%; /* Set a responsive width, adjust as needed */
+    text-indent: 5vw;;
+
+
+}
+
+.aboutme{
+    background-color: rgb(191, 2, 243);
+    height: 6vh;
+    letter-spacing: 3px;
+    border-radius: 15px;
+    width:30%;
+    font-size: clamp(0.28rem, 1.7vw + 0.28rem, 1.2rem); 
+    color:white;
+    position: relative;
+    margin-left: 33vw;
+    margin-bottom: 1vh;
+   
+}
+
+.aboutme:hover{
+    background-color: rgb(229, 0, 254);
+
+}
+
+.aboutme:active {
+    background-color: rgb(178, 0, 254);
+}
+
+
+
