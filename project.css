@@ -40,26 +40,17 @@ body {
 
 
 
+
 .me {
 
-    width: 15vw;
-    height: 19vh;
-    left:4vw;
+    width: 13vw;
+    height: 18vh;
+    left:3vw;
     position: fixed;
     top:0;
     
 }
 
-
-.d1 {
-
-    width: 10vw;
-    height: 11vh;
-    margin-left:90vw;
-    top:0;
-    z-index: 0;
-    
-}
 
 
 
@@ -114,17 +105,21 @@ button{
 
 
 .main{
-    float: center;
-    height: 70vh;
-    top:21vh;
-    width: 80vw;
-    background-color: rgb(28, 0, 28);
-    position:fixed;
-    left:10vw;
-    right:14vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-    border-radius: 30px;
+    
+        position: fixed;
+        top: 50%;               /* Center vertically */
+        left: 50%;              /* Center horizontally */
+        transform: translate(-50%, -50%);  /* Offset by 50% of the element's dimensions to truly center it */
+        width: 75vw;
+        height: 70vh;
+        background-color: rgb(28, 0, 28);
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-radius: 30px;
+        margin-top: 5vh;
+       
+       
+    
     
 }
 
@@ -164,7 +159,7 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     position:relative;
-    left:3vw;
+    left:7vw;
     margin:20px;
     
     
@@ -175,10 +170,10 @@ button{
 
     color:white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     font-weight:normal;
     position:relative;
-    left:7vw;
+    left:10vw;
     margin:10px;
     
 }
@@ -187,7 +182,7 @@ button{
 
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(12px, 2vw + 1rem, 18px); /* Responsive font size */
+    font-size: auto;
     font-weight: normal;
     position: relative;
     left: 0; /* Aligns the element to the left */
@@ -256,6 +251,72 @@ ul.lms3, ol.lms3 {
 }
 
 
+
+
+.triangle-buttonR {
+    position: absolute;
+    width:90px ;
+    height: 90px ;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 45vh;
+    margin-left: 91vw;
+  }
+
+  .triangle-buttonR::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%) rotate(0deg); 
+    border-left: 70px solid rgb(117, 0, 109);
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+  }
+
+  .triangle-buttonR:hover::before {
+    border-left-color: purple; /* Darker color on hover */
+    transform: translate(-50%, -50%) scale(1.1); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease, border-left-color 0.3s ease;
+  }
+
+  
+
+  .triangle-buttonL {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 45vh;
+    margin-left: 0%;
+   
+  }
+
+  .triangle-buttonL::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%); /* No rotation, centered */
+    border-left: 35px solid transparent;  /* No left border */
+    border-right: 70px solid rgb(117, 0, 109);
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+  }
+
+  .triangle-buttonL:hover::before {
+    border-right-color: purple; /* Darker color on hover */
+    transform: translate(-50%, -50%) scale(1.1); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease, border-right-color 0.3s ease;
+  }
+  
 
 
 
