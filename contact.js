@@ -6,16 +6,20 @@ function navigateTo(page) {
 }
 
 
-// Initialize EmailJS
-emailjs.init("IywptodCY-DUb36Pc");
+function navigateTo(page) {
+    window.location.href = page; // Redirects to the specified page
+}
 
-
- function validateForm() {
-
-     
+function validateForm() {
     const formGroups = document.querySelectorAll(".form-group");
     let isValid = true;
     const formData = {};
+
+    // Helper function to validate email using regex
+    function validateEmail(email) {
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailPattern.test(email);
+    }
 
     formGroups.forEach(group => {
         const input = group.querySelector("input, textarea");
@@ -35,33 +39,23 @@ emailjs.init("IywptodCY-DUb36Pc");
     });
 
     if (isValid) {
-        // Send email via EmailJS
-        emailjs.send("service_jonna143", "template_bohol143", {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            position:document.getElementById("position").value,
-            company: document.getElementById("company").value,
-            message: document.getElementById("message").value,
-            
-        })
-        .then(() => {
-            alert("Form submitted and email sent successfully!");
-        })
-        .catch(error => {
-            console.error("Error sending email:", error);
-    if (error.status) {
-        console.error("Status Code:", error.status);
-    }
-    if (error.text) {
-        console.error("Error Message:", error.text);
-    }
-    alert("There was an error sending the email. Please try again.");
-        });
-    }
-}
+        emailjs.init('IywptodCY-DUb36Pc'); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
 
-// Helper function to validate email using regex
-function validateEmail(email) {
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailPattern.test(email);
+        var templateParams = {
+            name: formData.name,
+            email: formData.email,
+            position: formData.position,
+            company: formData.company,
+            message: formData.message
+        };
+
+        emailjs.send('service_jonna143', 'template_vzk596j', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Email successfully sent!');
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('Error sending email. Please try again.');
+            });
+    }
 }
