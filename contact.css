@@ -13,6 +13,7 @@ body {
     padding: 0; /* Removes default body padding */
     height: 100vh;  /* Ensures the body takes full height */
     overflow-y: auto;  /* Enables vertical scrolling */
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 
@@ -103,7 +104,7 @@ button{
 
 .myMessage{
     position: absolute;
-    height:75vh;
+    height:73vh;
     z-index: 5;
     width:35vw;
     background-color: rgb(0, 0, 0);
@@ -127,6 +128,7 @@ button{
     background: #140d1b; 
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    overflow: hidden;
    
   }
 
@@ -222,6 +224,17 @@ button{
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(90deg, rgb(140, 80, 255), rgb(243, 7, 255)); /* Change gradient on hover */
 }
+
+#c{
+  position: absolute;
+  font-size: auto;
+  color: rgb(72, 38, 96);
+  font-family: 'Play', sans-serif;
+  margin-left: 1vw;
+  margin-top: 97vh;
+  
+}
+
 
 
    

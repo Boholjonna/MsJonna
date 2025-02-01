@@ -104,7 +104,7 @@ button{
 
 
 
-.main{
+.container{
     
         position: fixed;
         top: 50%;               /* Center vertically */
@@ -193,20 +193,7 @@ button{
     
 }
 
-#lms4{
 
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(12px, 2vw + 1rem, 18px); /* Responsive font size */
-    font-weight: normal;
-    position: relative;
-    left: 0; /* Aligns the element to the left */
-    margin: 10px;
-    text-align: left; /* Left-aligns the text inside the element */
-    left:10px;
-    
-    
-}
 
 
 
@@ -324,6 +311,327 @@ ul.lms3, ol.lms3 {
 
 
 @media (orientation:portrait){
+
+
+
+
+    body {
+        background-color: rgb(0, 0, 0);
+        margin: 0; /* Removes default body margins */
+        padding: 0; /* Removes default body padding */
+        height: 100vh;  /* Ensures the body takes full height */
+        overflow-y: auto;  /* Enables vertical scrolling */
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    
+    
+    
+    .p1{
+        top: 0;
+        background-color: transparent;
+        height: 18vh; /* Full height of the body */
+        width: 100vw; /* Full width of the body */
+        position: fixed;
+        display: flex;
+        gap:10vw; /* space between buttons*/
+        justify-content: center; 
+        object-fit: contain; 
+        padding-right: 10vw;
+       
+        
+        
+        
+    }
+    
+    
+    
+    
+    .me {
+    
+        width: 13vw;
+        height: 18vh;
+        left:3vw;
+        position: fixed;
+        top:0;
+        
+    }
+    
+    
+    
+    
+    button{
+        border:none;
+        font-size: large;
+        background-color: transparent;
+        padding: 0%;
+        margin-bottom:7vh;
+        font-weight: bold;
+        color:rgb(194, 0, 247)
+       
+        
+    }
+    
+    #b2{
+        color:aqua;
+        
+    }
+    
+    #b1{
+        margin-left:20vh;
+        
+    }
+    
+    
+    
+    
+    .line {
+        left: 5vw;
+        width: 80vw;
+        height: 2px;
+        background-color: rgb(7, 210, 255);  /* Solid violet color */
+        border: none;  /* Remove default border */
+        position: fixed;
+        margin-left: 13%;
+        box-shadow: 0px 0px 10px rgba(123, 7, 255, 0.5);  /* blur the line a bit */
+        top:10vh;
+       
+    
+        
+    }
+    
+    .label{
+    
+        margin-top: 10vh;
+        color: rgb(246, 0, 209);
+        font-size: x-large;
+              margin-top:20vh;
+    }
+    
+    
+    
+    .container{
+        
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            top: 50%;               /* Center vertically */
+            left: 50%;              /* Center horizontally */
+            transform: translate(-50%, -50%);  /* Offset by 50% of the element's dimensions to truly center it */
+            width: 75vw;
+            height: 70vh;
+            background-color: rgb(28, 0, 28);
+            overflow-y: auto;
+            overflow-x: hidden;
+            border-radius: 30px;
+            margin-top: 5vh;
+           
+           
+           
+        
+        
+    }
+    
+    
+       
+    #c{
+        position: absolute;
+        font-size: auto;
+        color: rgb(72, 38, 96);
+        margin-left: 1vw;
+        font-family: 'Play', sans-serif;
+        margin-top:97vh;
+    }
+    
+    
+    
+    
+    #java{
+        font-family: Changa;
+        font-size: clamp(1rem, 3vw + 1rem, 2rem); /* Responsive font size */
+        color: rgb(230, 0, 255);
+        position: relative;
+        letter-spacing: 10px;
+        margin-top: 20px;
+        text-align: center; /* Centers the text horizontally */
+        width: 100%; /* Ensures the element takes the full width */
+        left: 50%; /* Moves the element horizontally to the center */
+        transform: translateX(-50%); /* Offsets by 50% of the element's width to center it */
+        
+    
+    }
+    
+    
+    #lms1{
+    
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        position:relative;
+        left:7vw;
+        margin:20px;
+        
+        
+    }
+    
+    
+    #lms2{
+    
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight:normal;
+        position:relative;
+        left:10vw;
+        margin:10px;
+        
+    }
+    
+    #lms3{
+    
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: auto;
+        font-weight: normal;
+        position: relative;
+        left: 0; /* Aligns the element to the left */
+        margin-right: 10px;
+        text-align: left; /* Left-aligns the text inside the element */
+        left:5px;
+        
+        
+    }
+    
+    #lms4{
+    
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(12px, 2vw + 1rem, 18px); /* Responsive font size */
+        font-weight: normal;
+        position: relative;
+        left: 0; /* Aligns the element to the left */
+        margin: 10px;
+        text-align: left; /* Left-aligns the text inside the element */
+        left:10px;
+        
+        
+    }
+    
+    
+    
+    ul.lms3, ol.lms3 {
+        padding-left: 10px; /* Indent the whole list including bullets or numbers */
+    }
+    
+    #lm1{
+        height: 55vh;
+        width:60vw;
+        margin-left:10vw;
+        margin-top: 10vh;
+    }
+    
+    
+     
+    
+    
+    /* Scrollbar container */
+    ::-webkit-scrollbar {
+        width: 12px; /* Width of the vertical scrollbar */
+        height: 12px; /* Height of the horizontal scrollbar */
+    }
+    
+    /* Scrollbar track (background) */
+    ::-webkit-scrollbar-track {
+        background: linear-gradient(180deg, rgb(34, 0, 93), rgb(56, 0, 77)); /* Gradient background for the track */
+        border-radius: 6px; /* Rounded edges for the track */
+    }
+    
+    /* Scrollbar thumb (draggable part) */
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(90deg, rgb(153, 0, 247), rgb(146, 4, 255)); /* Gradient for the thumb */
+        border-radius: 6px; /* Rounded corners for the thumb */
+        border: 1px solid rgb(189, 180, 180); /* Adds padding and matches track color */
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+    }
+    
+    /* Scrollbar thumb on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(90deg, rgb(140, 80, 255), rgb(243, 7, 255)); /* Change gradient on hover */
+    }
+    
+    
+    
+    
+    .triangle-buttonR {
+        position: absolute;
+        width:90px ;
+        height: 90px ;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-top: 45vh;
+        margin-left: 91vw;
+      }
+    
+      .triangle-buttonR::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%) rotate(0deg); 
+        border-left: 70px solid rgb(117, 0, 109);
+        border-top: 35px solid transparent;
+        border-bottom: 35px solid transparent;
+      }
+    
+      .triangle-buttonR:hover::before {
+        border-left-color: purple; /* Darker color on hover */
+        transform: translate(-50%, -50%) scale(1.1); /* Slightly enlarge on hover */
+        transition: transform 0.3s ease, border-left-color 0.3s ease;
+      }
+    
+      
+    
+      .triangle-buttonL {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-top: 45vh;
+        margin-left: 0%;
+       
+      }
+    
+      .triangle-buttonL::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%); /* No rotation, centered */
+        border-left: 35px solid transparent;  /* No left border */
+        border-right: 70px solid rgb(117, 0, 109);
+        border-top: 35px solid transparent;
+        border-bottom: 35px solid transparent;
+      }
+    
+      .triangle-buttonL:hover::before {
+        border-right-color: purple; /* Darker color on hover */
+        transform: translate(-50%, -50%) scale(1.1); /* Slightly enlarge on hover */
+        transition: transform 0.3s ease, border-right-color 0.3s ease;
+      }
+      
+
+
+
+
    
 
 }
