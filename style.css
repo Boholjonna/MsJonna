@@ -16,6 +16,9 @@
 */
 
 /* items in this nav is aligned horizontally at the center */
+header {
+    position: fixed;
+}
 nav {
     position: fixed;
     height: 70px;
@@ -23,6 +26,7 @@ nav {
     background-color: rgb(251, 221, 217);
     box-shadow: 0 2px 3px rgb(254, 195, 187);
     margin: 0;
+    top: 0;
     display: flex;
     justify-content: space-around; 
     align-items: center; 
@@ -55,7 +59,7 @@ nav ul li:hover {
 
 nav .menu-icon {
       position: absolute;
-      right: 25px;
+      right: 35px;
       display: none;
       background-color:transparent;
       border: none;
@@ -95,14 +99,69 @@ nav .logo{
     border: none;
 }
 
-.about {
+.about-section {
 
     width: 100%;
     height: 100vh;
-    color:rgb(239, 149, 137)
+    color:rgb(239, 149, 137);
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+
+.image-container {
+    position: absolute;
+    height: auto;
+    width: 40%;
+    min-width: 30%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents overflow */
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red; /* Container border */
+}
+
+.my-image {
+    position: relative;
+    left:10px;
+    height: 100%; 
+    width: 100%;
+    display: block;
+    object-fit:fill; /* Ensures image fills the container without stretching */
+}
+
+
+
+.about-section{
+
+     height: 100vh;
+     width: 100vw;
+   
+     
 }
 
 @media (max-width:800px){
+
+    .image-container {
+        margin-top:100px;
+        height: auto;
+        width: auto;
+        border: 1px solid red; /* Just for visibility */
+        left: 0;
+        right: 0;
+    }
+    
+  
+
+
+
+    .image-container {
+       margin-left: 5%;
+       margin-right: 5%;
+  }
   
    
     nav .menu-icon {
@@ -115,7 +174,8 @@ nav .logo{
 
   
   .navbar {
-    top: 70px;
+    position: fixed;
+    top:70px;
     left: 0;
     width: 100%;
     height: 280px; /* Ensures there is space for vertical alignment */
@@ -126,9 +186,7 @@ nav .logo{
     align-items: center; /* Centers items horizontally */
     backdrop-filter: blur(10px); /* Adjust blur intensity */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
-    
     display: none;
-    
 }
 
 
