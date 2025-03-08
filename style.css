@@ -121,7 +121,7 @@ nav .logo{
     overflow: hidden; /* Prevents overflow */
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red; /* Container border */
+    
 }
 
 .my-image {
