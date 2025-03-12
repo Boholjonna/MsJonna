@@ -168,6 +168,7 @@ main {
     width:92vw;
     height:auto;
     top:80px;
+   
  
     
       
@@ -234,8 +235,8 @@ h3{
 h1 {
  
     color: orange;
-    font-size: clamp(1.25rem, -10.431rem + 13.7931vw, 2.5rem);
-    letter-spacing: 5px;
+    font-size: clamp(1.25rem, -10.431rem + 14.7931vw, 2.5rem);
+    letter-spacing: 2px;
     text-indent: 20px;
     width: auto;
    
@@ -244,12 +245,15 @@ h1 {
 #skills-section {
     width: 100%;
     height: auto;
-    background-color: rgb(255,235,235);
-    border: 5px ;
+    background-color: rgb(251, 255, 235);
     display: flex;
     flex-direction: column;
-    padding-top:100px;
-    padding-bottom:100px;
+    padding: auto;
+    border: 5px solid rgb(255, 209, 209);
+    gap:30px;
+    padding:50px;
+    align-items: center;
+    justify-content: center;
    
  
 }
@@ -257,10 +261,12 @@ h1 {
 .skills-items-container {
     display: flex;
     width: auto;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap; 
     gap:50px;  
-    padding:30px;
+    padding:auto;
 }
 
 
@@ -272,7 +278,9 @@ h1 {
             align-items: center;
             justify-content: center;
             object-fit:contain;
-            padding:1px;
+            flex-direction: column;
+            padding:auto;
+           
             
 
 
@@ -280,48 +288,121 @@ h1 {
         
 
 #projects-section {
-    width: 100%;
-    height:100vh;
-    background-color: rgb(220, 245, 222);
-    
- 
-}
-
-#credentials-section {
-    width: 100%;
-    height:100vh;
-    background-color: rgb(220, 245, 243);
-  
-  
-    
- 
-}
-
-#experience-section {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(245, 220, 243);
     
    
- 
-}
-#contact-section {
     width: 100%;
-    height: 100vh;
-    background-color: rgb(245, 220, 237);
-  
-  
-    
- 
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+    padding:100px;
+   
 }
 
+
+
+                    .projects-container{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 50px;
+                        
+                        
+                    }
+
+                    .project1{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        height: 600px;
+                        width: 500px;
+                        border: 3px solid rgb(255, 204, 170);
+                        border-radius: 10%;
+                        background-color: rgb(247, 213, 213);
+                        gap:auto;
+                        object-fit: contain;
+                    }
+
+                  
+                    .p1{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                       /* border: 3px solid rgb(255, 148, 77);*/
+
+
+                        
+                    }
+
+                    .p1-button {
+                        font-family: Arial;
+                        font-size: clamp(0.625rem, 0.125rem + 2vw, 1.25rem);
+                        color: #ff669c;
+                        text-shadow: 0px 0px 0px #9e0061;
+                        padding: 10px 30px 10px 30px;
+                        background-color: #fffbe6;
+                        border: 0px solid #ffd6d6;
+                        border-radius: 30px;
+                        box-shadow: 0px 2px 4px 0px #fc487b;
+                      }
+                      
+                      .p1-button:hover {
+                        background-color:  #fdf7d6;
+                      }
+                      
+
  
+    #credentials-section {
+        width: 100%;
+        height:auto;
+        background-color: rgb(220, 245, 243);
+      
+     
+    }
+    
+    #experience-section {
+        width: 100%;
+        height: auto;
+        background-color: rgb(245, 220, 243);
+        
+       
+     
+    }
+    #contact-section {
+        width: 100vw;
+        height: auto;
+        background-color: rgb(245, 220, 237);
+      
+    }
 
 
 @media (orientation:portrait){
+    .project1{
+        height: 400px;
+        width: 350px;
+      
+
+    }
+
+
+    .item {
+      
+        height:30px;
+        width: 30px;
+        aspect-ratio: 10 / 5; 
+
+
+    }
 
     #intro{
-        font-size: clamp(0.625rem, -0.028rem + 2.9851vw, 2.5rem);
+        font-size: clamp(1.25rem, 0.4464rem + 2.8571vw, 1.875rem);
     }
 
 
@@ -336,10 +417,11 @@ h1 {
 
 }
 
-#about-section{
+#skillset{
    
  
-   height: auto;
+  height: 50px;
+  width: 50px;
     
     
 }
