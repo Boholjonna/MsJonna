@@ -6,19 +6,24 @@
 
   body {
    
-    background-color: rgb(255, 243, 235);
+    background-color: rgb(255, 251, 230);
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    margin: 0;
+    height: 100vh;
+    
     
     
     
   }
 
+
   
 
 header {
     position: fixed;
+    z-index: 100;
 }
 nav {
    
@@ -58,6 +63,7 @@ nav ul li a {
     font-weight: bold;
     cursor: pointer;
     padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
    
 
@@ -110,13 +116,6 @@ nav .logo{
     border: none;
 }
 
-.about-section {
-    width: 100%;
-    height: auto;
-    height:fit-content;
-    
- 
-}
 
 .image-container {
     position: absolute;
@@ -142,26 +141,58 @@ nav .logo{
     display: block;
     object-fit:fill; /* Ensures image fills the container without stretching */
 }
+main {
+    position: relative;
+       margin: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(255, 251, 230);
+      top:70px;
+      
+}
 
 
 
 #about-section{
 
-     height: 100vh;
-     width: 100vw;
-     
    
-     
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width:92vw;
+    height:auto;
+    top:80px;
+ 
+    
+      
 }
 
-.about-me{
-    position:absolute;
-    top:19%;
-    height:auto;
-    width: 55vw;
-    right:4%;
+
+
+
+
+.container{  /*container*/
+   
+   
+    grid-row : 2/13;
+    background-color:rgb(255, 251, 230);
     
-  
+    
+            }
+
+            
+
+.my-image{
+   
+
+    object-fit: contain;
+   
 
 }
 
@@ -177,10 +208,33 @@ h3{
 
 }
 
+#image-container {
+    grid-column: 1/7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow: visible;
+    padding-top: 20px;
+  
+    
+}
+
+#about-container {
+    grid-column: 7/13;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+    
+    
+}
+
+
+
 #intro{
  
     color: orange;
-    font-size: 3vw;
+    font-size: clamp(1.25rem, -10.431rem + 13.7931vw, 2.5rem);
     letter-spacing: 5px;
     text-indent: 20px;
    
@@ -189,7 +243,7 @@ h3{
 #skills-section {
     width: 100%;
     height: 100vh;
-    background-color: beige;
+    background-color: rgb(228, 220, 245);
     
     
  
@@ -231,34 +285,51 @@ h3{
  
 }
 
-
-@media (max-width:800px){
-
-    #about-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;  /* horizontal center */
-        justify-content: center; /* vertical center */
-        text-align: center; /* optional: centers text inside child elements */
-      }
-      
  
-  .image-container{
-       top:0;
-       margin-top: 100px;
-       position: absolute;
-      
 
-  }
 
-  .about-me{
-    position: relative;
-    right:0;
-    width: 95%;
+@media (orientation:portrait){
+
+    #intro{
+        font-size: clamp(0.625rem, -0.028rem + 2.9851vw, 2.5rem);
+    }
+
+
+    #image-container {
+        
+        padding-top: 20px;
+        grid-column: 3/11;
+        grid-row: auto;
+        
    
-      
+   
 
-  }
+}
+
+#about-section{
+   
+ 
+   height: auto;
+    
+    
+}
+   
+
+
+#about-container{
+   
+ 
+  
+    grid-column: 1/13;
+    grid-row: 7/9;
+    
+}
+    
+
+  
+ 
+ 
+
    
     nav .menu-icon {
         display: block;
@@ -301,17 +372,6 @@ nav ul li {
      
     
      
-     
-}
-
-
-
-
-
-
-.image-container {
-   margin-left: 5%;
-   margin-right: 5%;
 }
 
 
