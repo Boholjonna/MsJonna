@@ -231,23 +231,53 @@ h3{
 
 
 
-#intro{
+h1 {
  
     color: orange;
     font-size: clamp(1.25rem, -10.431rem + 13.7931vw, 2.5rem);
     letter-spacing: 5px;
     text-indent: 20px;
+    width: auto;
    
 }
 
 #skills-section {
     width: 100%;
-    height: 100vh;
-    background-color: rgb(228, 220, 245);
-    
-    
+    height: auto;
+    background-color: rgb(255,235,235);
+    border: 5px ;
+    display: flex;
+    flex-direction: column;
+    padding-top:100px;
+    padding-bottom:100px;
+   
  
 }
+
+.skills-items-container {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap:50px;  
+    padding:30px;
+}
+
+
+
+        .item {
+           
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            object-fit:contain;
+            padding:1px;
+            
+
+
+        }
+        
 
 #projects-section {
     width: 100%;
