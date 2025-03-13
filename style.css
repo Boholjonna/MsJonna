@@ -167,7 +167,7 @@ main {
     width:92vw;
     height:auto;
     top:80px;
-    border: 1px solid red;
+   
   
    
  
@@ -255,7 +255,7 @@ h1 {
     border: 5px solid rgb(255, 209, 209);
     gap:30px;
     padding:50px;
-    border: 1px solid red;
+    
    
    
  
@@ -302,7 +302,7 @@ h1 {
     flex-direction: column;
     gap:30px;
     padding:100px;
-    border: 1px solid red;
+    
    
 }
 
