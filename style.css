@@ -328,12 +328,13 @@ h1 {
                         flex-direction: column;
                         width: auto;
                         border: 3px solid rgb(255, 204, 170);
-                        border-radius: 10%;
+                        border-radius: 5%;
                         background-color: rgb(247, 213, 213);
                         gap:auto;
                         object-fit: contain;
-                        padding:20px;
+                        padding:50px;
                         margin-bottom:20px;
+                        
                     }
 
                   
@@ -341,13 +342,14 @@ h1 {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                       /* border: 3px solid rgb(255, 148, 77);*/
+                        margin-bottom: 15px;
+                      
 
 
                         
                     }
 
-                    .p1-button {
+                    #project-btn {
                         font-family: Arial;
                         font-size: clamp(0.625rem, 0.125rem + 2vw, 1.25rem);
                         color: #ff669c;
@@ -359,9 +361,24 @@ h1 {
                         box-shadow: 0px 2px 4px 0px #fc487b;
                       }
                       
-                      .p1-button:hover {
+                      #project-btn:hover {
                         background-color:  #fdf7d6;
                       }
+
+                      .back-btn{
+                        display: none;
+                        margin-top:50px;
+                    }
+
+                    .lms-desc{
+                        display:none;
+                        text-align: justify;
+                        text-indent: 20px;
+                        
+
+                    }
+                
+                
                       
 
  
@@ -388,6 +405,7 @@ h1 {
       
     }
 
+    
 
 @media (orientation:portrait){
 
@@ -397,7 +415,7 @@ h1 {
 
     
     .project1{
-        height: 400px;
+        height: 430px;
         width: 350px;
       
       
@@ -490,7 +508,7 @@ h1 {
 
 
 /* items in this div  is aligned horizontally at the end */
-nav ul li {
+nav ul li  {
 
      display: flex;
      flex-direction: column;

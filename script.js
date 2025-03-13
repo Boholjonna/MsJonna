@@ -1,5 +1,5 @@
 
-/*function to toggle a button */
+/*function to toggle a button 
 
 
 
@@ -7,6 +7,13 @@ function showHideDiv(className) {
     const elements = document.getElementsByClassName(className); // Get divs to toggle
     const menuIcons = document.getElementsByClassName("menu-icon"); // Get menu icons
     const closeIcons = document.getElementsByClassName("close-icon"); // Get close icons
+*/
+
+function showHideDiv(divClass, menuIconClass, closeIconClass) {
+    const elements = document.getElementsByClassName(divClass); // Divs to toggle
+    const menuIcons = document.getElementsByClassName(menuIconClass); // Menu icons
+    const closeIcons = document.getElementsByClassName(closeIconClass);
+    
 
     if (elements.length > 0) {
         const div = elements[0]; // First div with the class
@@ -34,6 +41,7 @@ function toggleIcons(menuIcons, closeIcons, showClose) {
     }
 }
 
+/*realtime monitoring of width */
 
 let lastWidth = window.innerWidth;
 
@@ -43,3 +51,16 @@ window.addEventListener("resize", function() {
         lastWidth = window.innerWidth; // Update the stored width
     }
 });
+
+
+function showText(className) {
+    const elements = document.getElementsByClassName(className);
+    for (let i = 0; i < elements.length; i++) {
+        if (elements[i].style.display === "none" || getComputedStyle(elements[i]).display === "none") {
+            elements[i].style.display = "block";
+        } else {
+            elements[i].style.display = "none";
+        }
+    }
+}
+
