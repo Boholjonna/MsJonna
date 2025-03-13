@@ -8,12 +8,12 @@
   
   body {
    
-    /* background-color: rgb(255, 251, 230);*/
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 251, 230);
     margin: 0;
     box-sizing: border-box;
     width: 100%;
     padding: 0;
+    overflow-x: hidden;
     
     
    
@@ -332,6 +332,8 @@ h1 {
                         background-color: rgb(247, 213, 213);
                         gap:auto;
                         object-fit: contain;
+                        padding:20px;
+                        margin-bottom:20px;
                     }
 
                   
