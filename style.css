@@ -1,6 +1,10 @@
 *, *::before, *::after {
     box-sizing: border-box;
+    
   }
+
+
+  
   
   body {
    
@@ -10,7 +14,8 @@
     box-sizing: border-box;
     width: 100%;
     padding: 0;
-    overflow-x: hidden;
+    
+    
    
 
     
@@ -131,17 +136,21 @@ nav .logo{
 
 main {
 
-       position: relative;
-       margin: 0;
+       position:absolute;
       width: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      min-width: 100vw; 
       height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: rgb(255, 251, 230);
+    background-color: rgb(255, 251, 230);
       top:70px;
       box-sizing: border-box;
+      
+   
     
 }
 
@@ -158,6 +167,7 @@ main {
     width:92vw;
     height:auto;
     top:80px;
+    border: 1px solid red;
   
    
  
@@ -245,6 +255,7 @@ h1 {
     border: 5px solid rgb(255, 209, 209);
     gap:30px;
     padding:50px;
+    border: 1px solid red;
    
    
  
@@ -291,6 +302,7 @@ h1 {
     flex-direction: column;
     gap:30px;
     padding:100px;
+    border: 1px solid red;
    
 }
 
@@ -314,8 +326,7 @@ h1 {
                         align-items: center;
                         justify-content: center;
                         flex-direction: column;
-                        height: 600px;
-                        width: 500px;
+                        width: auto;
                         border: 3px solid rgb(255, 204, 170);
                         border-radius: 10%;
                         background-color: rgb(247, 213, 213);
@@ -377,9 +388,16 @@ h1 {
 
 
 @media (orientation:portrait){
+
+    main {
+        min-width: 100%;
+    }
+
+    
     .project1{
         height: 400px;
         width: 350px;
+      
       
 
     }
@@ -404,6 +422,8 @@ h1 {
         padding-top: 20px;
         grid-column: 3/11;
         grid-row: auto;
+       
+       
         
    
    
@@ -427,6 +447,9 @@ h1 {
   
     grid-column: 1/13;
     grid-row: 7/9;
+    
+   
+    
     
 }
     
