@@ -372,9 +372,10 @@ h1 {
                       }
                       
                       #project-btn:hover {
-                        background-color:  #fdf7d6;
+                        background-color:  #ffedc7;
                       }
 
+                     
                       .back-btn{
                         display: none;
                         margin-top:50px;
