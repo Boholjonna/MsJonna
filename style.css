@@ -328,6 +328,8 @@ h1 {
                         flex-wrap: wrap;
                         gap: 50px;
                        
+                       
+                       
                         
                         
                         
@@ -346,6 +348,9 @@ h1 {
                         object-fit: contain;
                         padding:50px;
                         margin-bottom:20px;
+                      
+                        
+                       
 
                        
                         
@@ -388,7 +393,8 @@ h1 {
                     .lms-desc{
                         display:none;
                         text-align: justify;
-                        font-size: clamp(0.625rem, -0.0446rem + 1.3857vw, 1.5625rem);
+                        font:auto;
+                        
                         
 
                     }
@@ -605,7 +611,7 @@ h1 {
     
     .project1{
         height: 430px;
-        width: 350px;
+        width: 400px;
       
       
 
