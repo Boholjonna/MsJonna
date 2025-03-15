@@ -442,7 +442,7 @@ h1 {
         border: 5px solid rgb(252, 173, 173);
         border-radius: 5%;
         object-fit: contain;
-        width: 600px;
+        width: 500px;
         height: auto;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
