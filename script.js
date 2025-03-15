@@ -65,7 +65,7 @@ function showText(className) {
 }
 
 /*function to show the animation of elements when the scroll is in the area */
-const observer = new IntersectionObserver((entries) => {
+const observerCard = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
@@ -74,7 +74,7 @@ const observer = new IntersectionObserver((entries) => {
   }, { threshold: 0.3 });
 
   const cardExp = document.querySelector('.card-exp');
-  observer.observe(cardExp);
+  observerCard.observe(cardExp);
 
 
   document.addEventListener("DOMContentLoaded", function () {
