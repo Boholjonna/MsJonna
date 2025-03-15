@@ -75,3 +75,26 @@ const observer = new IntersectionObserver((entries) => {
 
   const cardExp = document.querySelector('.card-exp');
   observer.observe(cardExp);
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                    observer.unobserve(entry.target); // Stop observing after animation
+                }
+            });
+        },
+        {
+            threshold: 0.5, // Trigger when 50% of the section is visible
+        }
+    );
+
+    sections.forEach((section) => {
+        observer.observe(section);
+    });
+});
