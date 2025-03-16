@@ -172,8 +172,8 @@ main {
       justify-content: center;
       align-items: center;
     background-color: rgb(255, 251, 230);
-      top:70px;
       box-sizing: border-box;
+   
       
    
     
@@ -182,8 +182,6 @@ main {
 
 
 #about-section{
-
-   
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(auto, 1fr);
@@ -191,7 +189,7 @@ main {
     grid-row-gap: 0px;
     width:92vw;
     height:auto;
-    top:80px;
+    
    
   
    
@@ -247,6 +245,10 @@ h3,h2{
     padding-top: 20px;
   
     
+}
+
+#about-section{
+  top:100px;
 }
 
 #about-container {
@@ -861,6 +863,8 @@ section > * {
 
 
 @media (orientation:portrait){
+
+  
 
   .cont-m{
     gap:2px;
