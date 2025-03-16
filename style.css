@@ -45,7 +45,8 @@ header {
 }
 
 footer {
-  display:absolute;
+  display:flex;
+  flex-direction: column;
   margin-bottom: 0;
   text-align: center;
   padding: 20px;
@@ -285,7 +286,7 @@ h1 {
   letter-spacing: 2px;
   text-indent: 20px;
   width: auto;
-  background: linear-gradient(90deg, orange, rgb(255, 123, 123), orange);
+  background: linear-gradient(90deg, orange, rgb(255, 59, 128), orange);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -302,7 +303,7 @@ h1 {
 #skills-section {
     width: 100%;
     height: auto;
-    background-color: rgb(251, 255, 235);
+    background-color: rgb(255, 0, 128);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -853,10 +854,20 @@ section::before {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at center, rgba(255, 200, 255, 0.1), transparent 70%);
+  background: radial-gradient(
+    circle at center,
+     rgb(255, 251, 230) 10%,
+     rgb(253, 240, 210)40%,
+    rgb(255, 251, 230) 60%,
+    transparent 90%
+  );
+  
   animation: backgroundMotion 10s linear infinite;
+  filter: blur(50px);
+  mix-blend-mode: screen;
   z-index: 0;
 }
+
 
 @keyframes backgroundMotion {
   0% {
