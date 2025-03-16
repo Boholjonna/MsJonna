@@ -225,7 +225,7 @@ main {
    
    
     grid-row : 2/13;
-    background-color:rgb(255, 251, 230);
+    background-color:transparent;
     
     
             }
@@ -303,7 +303,7 @@ h1 {
 #skills-section {
     width: 100%;
     height: auto;
-    background-color: rgb(255, 0, 128);
+    background-color: rgb(255, 0, 81);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -842,10 +842,13 @@ textarea {
 }
 
 
+
+
 section {
   position: relative;
   overflow: hidden;
 }
+
 
 section::before {
   content: "";
@@ -857,8 +860,8 @@ section::before {
   background: radial-gradient(
     circle at center,
      rgb(255, 251, 230) 10%,
-     rgb(253, 240, 210)40%,
-    rgb(255, 251, 230) 60%,
+     rgb(254, 248, 229)10%,
+     rgb(255, 251, 230)80%,
     transparent 90%
   );
   
@@ -867,7 +870,6 @@ section::before {
   mix-blend-mode: screen;
   z-index: 0;
 }
-
 
 @keyframes backgroundMotion {
   0% {
