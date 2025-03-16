@@ -24,12 +24,16 @@
     padding: 0;
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+   
     
     
    
 
     
   }
+
 
 
   
@@ -39,6 +43,20 @@ header {
     z-index: 100;
     
 }
+
+footer {
+  display:absolute;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffe5cb;
+  color: #333;
+  font-family: 'Arsenal', sans-serif;
+  margin-bottom: 0;
+  z-index: 1001;
+  bottom: 0;
+}
+
 
 nav {
    
@@ -160,8 +178,8 @@ nav .logo{
 
 
 main {
-       
-       position:absolute;
+      
+      
       width: 100%;
       overflow-y: hidden;
       overflow-x: hidden;
