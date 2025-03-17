@@ -68,13 +68,21 @@ function showText(className) {
 const observerCard = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('show');
+        if (entry.target.id === 'button') {
+          entry.target.classList.add('animate-in'); // Use your actual animation class here
+        } else {
+          entry.target.classList.add('show'); // For other elements like .card-exp
+        }
       }
     });
   }, { threshold: 0.3 });
 
   const cardExp = document.querySelector('.card-exp');
   observerCard.observe(cardExp);
+
+  const btn = document.getElementById('button');
+  observerCard.observe(btn);
+   
 
 
   document.addEventListener("DOMContentLoaded", function () {

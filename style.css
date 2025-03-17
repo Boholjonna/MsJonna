@@ -425,7 +425,46 @@ h1 {
                         border: 0px solid #ffd6d6;
                         border-radius: 30px;
                         box-shadow: 0px 2px 4px 0px #fc487b;
+                        transform: scale(0.95);
+                        transition: transform 0.2s ease;
+                       
                       }
+
+                      #button.animate-in {
+                        animation: fadeInWarm 1s ease forwards;
+                      }
+                      
+                      #button.clicked {
+                        animation: clickWarm 0.4s ease;
+                      }
+                      
+                      @keyframes fadeInWarm {
+                        0% {
+                          opacity: 0;
+                          transform: scale(0.95);
+                        }
+                        100% {
+                          opacity: 1;
+                          transform: scale(1);
+                        }
+                      }
+                      
+                      @keyframes clickWarm {
+                        0% {
+                          transform: scale(1);
+                          background-color: #f76c6c;
+                        }
+                        50% {
+                          transform: scale(1.1);
+                          background-color: #ff8a8a;
+                        }
+                        100% {
+                          transform: scale(1);
+                          background-color: #f76c6c;
+                        }
+                      }
+
+                    
                       
                       #button:hover {
                         background-color:  #ffedc7;
@@ -621,7 +660,7 @@ h1 {
   
 }
 
-.card-exp.show {
+.card-exp.show  {
   opacity: 1;
   transform: translateY(0);
 }
