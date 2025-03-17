@@ -102,8 +102,8 @@
                        <p class="lms-desc">Library Management System is an exclusive platform with User, Librarian, and Admin interfaces. Users can borrow and reserve books, manage profiles, and view their activity history. Overdue books restrict access until payment is made. Librarians manage inventory, returns, payments, and reservations. Admins oversee user and librarian accounts, track earnings, and generate analytics on book usage and library operations.</p>
                     
                        <div>
-                    <button class="about-btn" id="project-btn" onclick="showHideDiv('lms-desc', 'about-btn','back-btn') ; showText('p1')" > A b o u t </button>
-                    <button class="back-btn" id="project-btn" onclick="showHideDiv('lms-desc', 'about-btn','back-btn'); showText('p1')" > B a c k </button>
+                    <button class="about-btn" id="button" onclick="showHideDiv('lms-desc', 'about-btn','back-btn') ; showText('p1')" > A b o u t </button>
+                    <button class="back-btn" id="button" onclick="showHideDiv('lms-desc', 'about-btn','back-btn'); showText('p1')" > B a c k </button>
                 
                 
              </div>
@@ -169,15 +169,16 @@
 
     <section id="experience-section"> 
         <h1 > E X P E R I E N C E</h1>
-                        <div class="card-exp" id="cardExp">
-                            <div class="logo-exp">
-                            <img src="nc.png" alt="Profile Image">
+                        <div class="card-exp" id="cardExp">  
+                            <div class="logo-exp"> 
+                                <img src="nc.png" alt="Profile Image">
                             </div>
                             <div class="content-exp">
-                            <p>ESL Teacher</p>
+                                <a href="https://nativecamp.net/waiting/detail/149214"><p style="font-weight: bold ;  color:rgb(255, 20, 20);">ESL Teacher</p></a>
                             <p>2023–present</p>
                             <p>Online teaching of English language to foreign students via textbooks.</p>
                             </div>
+                           
                         </div>
     </section>
 
@@ -190,12 +191,14 @@
                     <div class="cont-p"><p>Thank you for taking time to consider my profile. Let me know if I have the necessary skills for a role that you are currently looking for. I would be excited to discuss about it. Feel free to send me a message below!</p>
 
                 </div>
+                         </div>
 
-            
-
-
+        <div cont-cv style="padding-bottom: 50px;  padding-left:20px;" >
+            <button id="button">VIEW CV</button>
+            <button id="button">Download CV</button>
 
         </div>
+
         <div class="cont-form">
             <form onsubmit="validateForm(event)">
                 <label for="name">Name</label>
