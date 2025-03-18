@@ -203,3 +203,14 @@ function hideElementsByClass(className) {
             });
     }
 }
+
+// this function is to remain the bottom line when the nav is clicked
+
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('active')); // remove from all
+    link.classList.add('active'); // add to clicked
+  });
+});
