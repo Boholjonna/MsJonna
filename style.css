@@ -431,11 +431,11 @@ h1 {
                       }
 
                       #button.animate-in {
-                        animation: fadeInWarm 1s ease forwards;
+                        animation: fadeInWarm 2s ease forwards;
                       }
                       
                       #button.clicked {
-                        animation: clickWarm 0.4s ease;
+                        animation: clickWarm 0.5s ease;
                       }
                       
                       @keyframes fadeInWarm {
