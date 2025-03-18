@@ -205,12 +205,47 @@ function hideElementsByClass(className) {
 }
 
 // this function is to remain the bottom line when the nav is clicked
+        
+  const navLinks = document.querySelectorAll('nav ul li a');
+  const sections = document.querySelectorAll('section');
 
-const navLinks = document.querySelectorAll('nav ul li a');
+  // Track current active section
+  let currentActiveSection = '';
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.forEach(l => l.classList.remove('active')); // remove from all
-    link.classList.add('active'); // add to clicked
+  // Scroll-based logic
+  window.addEventListener('scroll', () => {
+    let newActiveSection = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+
+      if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        newActiveSection = section.getAttribute('id');
+      }
+    });
+
+    // Only update nav highlight if user scrolled to another section
+    if (newActiveSection && newActiveSection !== currentActiveSection) {
+      currentActiveSection = newActiveSection;
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(currentActiveSection)) {
+          link.classList.add('active');
+        }
+      });
+    }
   });
-});
+
+  // Click-based logic
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+
+      // Set clicked section as active to prevent scroll immediately overriding it
+      const clickedSection = link.getAttribute('href').replace('#', '');
+      currentActiveSection = clickedSection;
+    });
+  });
