@@ -930,6 +930,25 @@ section > * {
 }
 
 
+.orange-underline {
+  font-weight: bold;
+  color: rgb(255, 20, 20);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.orange-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: orange; /* This sets the underline color */
+}
+
+
 
 
 
