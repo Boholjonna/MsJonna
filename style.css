@@ -312,7 +312,7 @@ h1 {
     flex-direction: column;
     border: 5px solid rgb(255, 209, 209);
     gap:30px;
-    padding:50px;
+    padding:30px;
     margin-top:80px;
     
    
@@ -322,12 +322,12 @@ h1 {
 
 .skills-items-container {
     display: flex;
-    width: 100%;
+    width: 60%;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap; 
-    gap:50px;  
+    gap:30px;  
     padding:auto;
     
 }
@@ -343,10 +343,16 @@ h1 {
             object-fit:contain;
             flex-direction: column;
             padding:auto;
+         
            
             
 
 
+        }
+
+        .item img{
+           width: 60px;          
+           border-radius: 20%;
         }
         
 
@@ -1131,5 +1137,12 @@ header {
 
 }
 
+.skills-items-container {
+  
+  width: 100%;
+  gap:60px;  
+  padding:auto;
+  
+}
 
 }
