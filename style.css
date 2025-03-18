@@ -719,11 +719,15 @@ h1 {
 
 
 
-.profile-exp img {
-   width: 200px;
+.profile-exp img { 
+  width: 150px;
    border-radius: 50%;
-   border:5px solid rgb(255, 209, 125);
+    border:5px solid rgb(255, 209, 125); 
 }
+
+
+
+
 
 
 .logo-exp img {
