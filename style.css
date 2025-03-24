@@ -210,6 +210,7 @@ main {
     grid-row-gap: 0px;
     width:92vw;
     height:auto;
+    margin-top: 5vh;
     
    
   
@@ -985,6 +986,18 @@ section > * {
 
 
 @media (orientation:portrait){
+
+  #about-section{
+   margin-top: 80px;
+    
+   
+  
+   
+ 
+    
+      
+}
+
 
   
 
